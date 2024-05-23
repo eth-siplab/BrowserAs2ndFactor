@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "ETH BrowserAs2ndFactor",
+  "version": "0.1",
+  "description": "Use PCs or laptops as the second factor for ETH authentication",
+  "permissions": ["storage", "activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://idbdfedin16.ethz.ch/*",
+        "https://access.ethz.ch/idpauthapp/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/Sa2FETH.png",
+      "32": "images/Sa2FETH.png",
+      "48": "images/Sa2FETH.png",
+      "128": "images/Sa2FETH.png"
+    }
+  },
+  "icons": {
+    "16": "images/Sa2FETH.png",
+    "32": "images/Sa2FETH.png",
+    "48": "images/Sa2FETH.png",
+    "128": "images/Sa2FETH.png"
+  },
+  "web_accessible_resources": [
+    "images/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "eth-browser-2nd-factor@ethz.ch"
+    }
+  }
+}

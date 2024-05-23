@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ETH BrowserAs2ndFactor Settings</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 5px;
+      }
+      .img-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .seed-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input[type="text"].masked {
+        background-color: #f0f0f0;
+        color: #666;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      button.disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+      }
+      button.disabled:hover {
+        background-color: #6c757d;
+      }
+      .save-button {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .save-icon {
+        width: 16px;
+        height: 16px;
+        fill: white;
+      }
+      .divider {
+        height: 1px;
+        background-color: #ddd;
+        margin: 20px 0;
+      }
+      .totp-section h3 {
+        text-align: left;
+        margin-bottom: 15px;
+      }
+      .code-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+      .totp-code {
+        flex: 1;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Courier New', monospace;
+        color: #333;
+        padding: 10px;
+        background-color: #fff;
+        border: 2px solid #007bff;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        text-align: center;
+        transition: background-color 0.2s ease;
+      }
+      .totp-code.copied {
+        background-color: #d4edda;
+        border-color: #28a745;
+      }
+      .copy-button {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+      }
+      .copy-icon {
+        width: 16px;
+        height: 16px;
+        fill: white;
+      }
+      .copy-button.success .copy-icon {
+        display: none;
+      }
+      .copy-button.success .check-icon {
+        display: block;
+      }
+      .check-icon {
+        width: 16px;
+        height: 16px;
+        fill: white;
+        display: none;
+      }
+      .progress-container {
+        width: 100%;
+        height: 8px;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        margin-top: 15px;
+        overflow: hidden;
+      }
+      .progress-bar {
+        height: 100%;
+        background-color: #6c757d;
+        border-radius: 4px;
+        transition: width 0.1s linear;
+        width: 0%;
+      }
+      .time-remaining {
+        font-size: 12px;
+        color: #666;
+        margin-top: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img-container">
+      <img src="images/eth_logo_kurz_pos.png" width="150" />
+    </div>
+    <div id="container">
+      <h3>Multifactor Seed</h3>
+      <div class="seed-container">
+        <input type="text" id="totp-seed" placeholder="Enter seed" />
+        <button class="save-button" id="save-seed">
+          <svg class="save-icon" viewBox="0 0 24 24">
+            <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="divider" id="divider" style="display: none;"></div>
+      
+      <div class="totp-section" id="totp-section" style="display: none;">
+        <h3>Current Code</h3>
+        <div class="code-container">
+          <div class="totp-code" id="totp-code">------</div>
+          <button class="copy-button" id="copy-button">
+            <svg class="copy-icon" viewBox="0 0 24 24">
+              <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+            </svg>
+            <svg class="check-icon" viewBox="0 0 24 24">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+          </button>
+        </div>
+        
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="time-remaining" id="time-remaining">--s remaining</div>
+      </div>
+      
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
