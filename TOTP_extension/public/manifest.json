@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ETH 2FA TOTP Autofill",
+  "version": "1.0",
+  "description": "Automatically fills ETH 2FA based on TOTP Seed",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://idbdfedin16.ethz.ch/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
