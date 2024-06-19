@@ -4,7 +4,7 @@ module.exports = {
   mode: "production",
   entry: {
     background: path.resolve(__dirname, "..", "src", "background.ts"),
-    content: path.resolve(__dirname, "..", "src", "content.js"),
+    content: path.resolve(__dirname, "..", "src", "content.ts"),
     popup: path.resolve(__dirname, "..", "src", "popup.ts"),
   },
   output: {
@@ -27,7 +27,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: ".", to: ".", context: "public" },
-        // { from: "images", to: "images" },
+        { from: "images", to: "images" },
         { from: "src/popup.html", to: "popup.html" },
       ],
     }),
