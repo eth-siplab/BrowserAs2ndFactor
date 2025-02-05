@@ -74,3 +74,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     return true;
   }
 });
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.action.openPopup();
+});
