@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ETH 2FA TOTP Autofill",
-  "version": "1.0",
-  "description": "Automatically fills ETH 2FA based on TOTP Seed",
+  "name": "ETH BrowserAs2ndFactor",
+  "version": "0.1",
+  "description": "Use PCs or laptops as the second factor for ETH authentication",
   "permissions": ["storage", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
