@@ -68,7 +68,6 @@ function base32tohex(base32: string) {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "generateTOTP") {
     chrome.storage.sync.get("totpSeed", async (data) => {
-      //console.log(data);
       const totpCode = await generateTOTP(data.totpSeed);
       sendResponse({ code: totpCode });
     });

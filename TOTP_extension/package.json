@@ -1,6 +1,6 @@
 {
-  "name": "totp-autofill-eth",
-  "version": "1.0.0",
+  "name": "eth-BA2F",
+  "version": "0.1.0",
   "main": "dist/background.js",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.js"
