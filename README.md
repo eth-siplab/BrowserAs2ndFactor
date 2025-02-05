@@ -1,10 +1,17 @@
-# More convenient 2FA for ETH Zurich
+# Browser as a second factor for ETH authentication
 
-## Approaches
+Philipp Braune, Christian Holz<br/>
+[Sensing, Interaction & Perception Lab](https://siplab.org)<br/>
+Department of Computer Science<br/>
+ETH Zürich, Switzerland
 
-1. Seeded TOTP directly run in extension detecting ETHZ 2FA, then automatically generate short code and submit.
-2. Use Notebooks camera to detect smartphone with opened 2FA App (Google or Microsoft) then extract correct 2FA Code, fill in and submit.
+---
 
-### Seeded TOTP Extension
+Use PCs or laptops as the second factor for ETH authentication.
 
-To generate the Chrome extension run `npm run build` in the folder `TOTP_extension`. Then upload the generated `dist` Folder to Chrome in the extension window with activated Developer Mode.
+
+## Building the extension
+
+To generate the Chrome or Edge extension, run `npm run build` in the folder `TOTP_extension`.
+
+Then upload the generated `dist` Folder to Chrome/Edge in the extension window with activated Developer Mode.
