@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA35F9192E4CED66004D813A /* Sa2FETH Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AA35F9182E4CED66004D813A /* Sa2FETH Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA35F9232E4CED66004D813A /* Sa2FETH Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AA35F9222E4CED66004D813A /* Sa2FETH Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA35F91A2E4CED66004D813A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA35F8DE2E4CED65004D813A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA35F9172E4CED66004D813A;
+			remoteInfo = "Sa2FETH Extension (iOS)";
+		};
+		AA35F9242E4CED66004D813A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA35F8DE2E4CED65004D813A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA35F9212E4CED66004D813A;
+			remoteInfo = "Sa2FETH Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA35F94C2E4CED66004D813A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA35F9192E4CED66004D813A /* Sa2FETH Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9562E4CED66004D813A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA35F9232E4CED66004D813A /* Sa2FETH Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA35F8FA2E4CED66004D813A /* Sa2FETH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sa2FETH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA35F90C2E4CED66004D813A /* Sa2FETH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sa2FETH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA35F9182E4CED66004D813A /* Sa2FETH Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sa2FETH Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA35F9222E4CED66004D813A /* Sa2FETH Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sa2FETH Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AA35F9472E4CED66004D813A /* Exceptions for "app/shared" folder in "Sa2FETH (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = AA35F8F92E4CED66004D813A /* Sa2FETH (iOS) */;
+		};
+		AA35F94B2E4CED66004D813A /* Exceptions for "extension/ios" folder in "Sa2FETH Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AA35F9172E4CED66004D813A /* Sa2FETH Extension (iOS) */;
+		};
+		AA35F9502E4CED66004D813A /* Exceptions for "app/ios" folder in "Sa2FETH (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AA35F8F92E4CED66004D813A /* Sa2FETH (iOS) */;
+		};
+		AA35F9512E4CED66004D813A /* Exceptions for "app/shared" folder in "Sa2FETH (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Resources/Main.html",
+				Assets.xcassets,
+				Resources/Icon.png,
+				Resources/Script.js,
+				Resources/Style.css,
+				ViewController.swift,
+			);
+			target = AA35F90B2E4CED66004D813A /* Sa2FETH (macOS) */;
+		};
+		AA35F9552E4CED66004D813A /* Exceptions for "extension/macos" folder in "Sa2FETH Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AA35F9212E4CED66004D813A /* Sa2FETH Extension (macOS) */;
+		};
+		AA35F95A2E4CED66004D813A /* Exceptions for "extension/shared" folder in "Sa2FETH Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = AA35F9172E4CED66004D813A /* Sa2FETH Extension (iOS) */;
+		};
+		AA35F95B2E4CED66004D813A /* Exceptions for "extension/shared" folder in "Sa2FETH Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/_locales,
+				Resources/background.js,
+				Resources/content.js,
+				Resources/images,
+				Resources/manifest.json,
+				Resources/popup.css,
+				Resources/popup.html,
+				Resources/popup.js,
+				SafariWebExtensionHandler.swift,
+			);
+			target = AA35F9212E4CED66004D813A /* Sa2FETH Extension (macOS) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA35F8E22E4CED65004D813A /* app/shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA35F9472E4CED66004D813A /* Exceptions for "app/shared" folder in "Sa2FETH (iOS)" target */,
+				AA35F9512E4CED66004D813A /* Exceptions for "app/shared" folder in "Sa2FETH (macOS)" target */,
+			);
+			path = "app/shared";
+			sourceTree = "<group>";
+		};
+		AA35F8EB2E4CED66004D813A /* extension/shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA35F95A2E4CED66004D813A /* Exceptions for "extension/shared" folder in "Sa2FETH Extension (iOS)" target */,
+				AA35F95B2E4CED66004D813A /* Exceptions for "extension/shared" folder in "Sa2FETH Extension (macOS)" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "extension/shared";
+			sourceTree = "<group>";
+		};
+		AA35F8FC2E4CED66004D813A /* app/ios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA35F9502E4CED66004D813A /* Exceptions for "app/ios" folder in "Sa2FETH (iOS)" target */,
+			);
+			path = "app/ios";
+			sourceTree = "<group>";
+		};
+		AA35F90D2E4CED66004D813A /* app/macos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "app/macos";
+			sourceTree = "<group>";
+		};
+		AA35F91C2E4CED66004D813A /* extension/ios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA35F94B2E4CED66004D813A /* Exceptions for "extension/ios" folder in "Sa2FETH Extension (iOS)" target */,
+			);
+			path = "extension/ios";
+			sourceTree = "<group>";
+		};
+		AA35F9262E4CED66004D813A /* extension/macos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA35F9552E4CED66004D813A /* Exceptions for "extension/macos" folder in "Sa2FETH Extension (macOS)" target */,
+			);
+			path = "extension/macos";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA35F8F72E4CED66004D813A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9092E4CED66004D813A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9152E4CED66004D813A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F91F2E4CED66004D813A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA35F8DD2E4CED65004D813A = {
+			isa = PBXGroup;
+			children = (
+				AA35F8E22E4CED65004D813A /* app/shared */,
+				AA35F8EB2E4CED66004D813A /* extension/shared */,
+				AA35F8FC2E4CED66004D813A /* app/ios */,
+				AA35F90D2E4CED66004D813A /* app/macos */,
+				AA35F91C2E4CED66004D813A /* extension/ios */,
+				AA35F9262E4CED66004D813A /* extension/macos */,
+				AA35F8FB2E4CED66004D813A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA35F8FB2E4CED66004D813A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA35F8FA2E4CED66004D813A /* Sa2FETH.app */,
+				AA35F90C2E4CED66004D813A /* Sa2FETH.app */,
+				AA35F9182E4CED66004D813A /* Sa2FETH Extension.appex */,
+				AA35F9222E4CED66004D813A /* Sa2FETH Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA35F8F92E4CED66004D813A /* Sa2FETH (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35F94D2E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH (iOS)" */;
+			buildPhases = (
+				AA35F8F62E4CED66004D813A /* Sources */,
+				AA35F8F72E4CED66004D813A /* Frameworks */,
+				AA35F8F82E4CED66004D813A /* Resources */,
+				AA35F94C2E4CED66004D813A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA35F91B2E4CED66004D813A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA35F8FC2E4CED66004D813A /* app/ios */,
+			);
+			name = "Sa2FETH (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Sa2FETH (iOS)";
+			productReference = AA35F8FA2E4CED66004D813A /* Sa2FETH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA35F90B2E4CED66004D813A /* Sa2FETH (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35F9572E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH (macOS)" */;
+			buildPhases = (
+				AA35F9082E4CED66004D813A /* Sources */,
+				AA35F9092E4CED66004D813A /* Frameworks */,
+				AA35F90A2E4CED66004D813A /* Resources */,
+				AA35F9562E4CED66004D813A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA35F9252E4CED66004D813A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA35F90D2E4CED66004D813A /* app/macos */,
+			);
+			name = "Sa2FETH (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Sa2FETH (macOS)";
+			productReference = AA35F90C2E4CED66004D813A /* Sa2FETH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA35F9172E4CED66004D813A /* Sa2FETH Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35F9482E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH Extension (iOS)" */;
+			buildPhases = (
+				AA35F9142E4CED66004D813A /* Sources */,
+				AA35F9152E4CED66004D813A /* Frameworks */,
+				AA35F9162E4CED66004D813A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA35F91C2E4CED66004D813A /* extension/ios */,
+			);
+			name = "Sa2FETH Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Sa2FETH Extension (iOS)";
+			productReference = AA35F9182E4CED66004D813A /* Sa2FETH Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AA35F9212E4CED66004D813A /* Sa2FETH Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA35F9522E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH Extension (macOS)" */;
+			buildPhases = (
+				AA35F91E2E4CED66004D813A /* Sources */,
+				AA35F91F2E4CED66004D813A /* Frameworks */,
+				AA35F9202E4CED66004D813A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA35F9262E4CED66004D813A /* extension/macos */,
+			);
+			name = "Sa2FETH Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Sa2FETH Extension (macOS)";
+			productReference = AA35F9222E4CED66004D813A /* Sa2FETH Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA35F8DE2E4CED65004D813A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					AA35F8F92E4CED66004D813A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AA35F90B2E4CED66004D813A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AA35F9172E4CED66004D813A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AA35F9212E4CED66004D813A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = AA35F8E12E4CED65004D813A /* Build configuration list for PBXProject "Sa2FETH" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA35F8DD2E4CED65004D813A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AA35F8FB2E4CED66004D813A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA35F8F92E4CED66004D813A /* Sa2FETH (iOS) */,
+				AA35F90B2E4CED66004D813A /* Sa2FETH (macOS) */,
+				AA35F9172E4CED66004D813A /* Sa2FETH Extension (iOS) */,
+				AA35F9212E4CED66004D813A /* Sa2FETH Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA35F8F82E4CED66004D813A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F90A2E4CED66004D813A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9162E4CED66004D813A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9202E4CED66004D813A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA35F8F62E4CED66004D813A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9082E4CED66004D813A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F9142E4CED66004D813A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA35F91E2E4CED66004D813A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA35F91B2E4CED66004D813A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA35F9172E4CED66004D813A /* Sa2FETH Extension (iOS) */;
+			targetProxy = AA35F91A2E4CED66004D813A /* PBXContainerItemProxy */;
+		};
+		AA35F9252E4CED66004D813A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA35F9212E4CED66004D813A /* Sa2FETH Extension (macOS) */;
+			targetProxy = AA35F9242E4CED66004D813A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA35F9492E4CED66004D813A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "extension/ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sa2FETH Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.ios.Sa2FETH.Extension;
+				PRODUCT_NAME = "Sa2FETH Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA35F94A2E4CED66004D813A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "extension/ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sa2FETH Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.ios.Sa2FETH.Extension;
+				PRODUCT_NAME = "Sa2FETH Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA35F94E2E4CED66004D813A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9BH74AQM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "app/ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sa2FETH;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.ios.Sa2FETH;
+				PRODUCT_NAME = Sa2FETH;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA35F94F2E4CED66004D813A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9BH74AQM8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "app/ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sa2FETH;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.ios.Sa2FETH;
+				PRODUCT_NAME = Sa2FETH;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA35F9532E4CED66004D813A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "extension/macos/Sa2FETH.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "extension/macos/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sa2FETH Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.Sa2FETH.Extension;
+				PRODUCT_NAME = "Sa2FETH Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA35F9542E4CED66004D813A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "extension/macos/Sa2FETH.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "extension/macos/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sa2FETH Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.Sa2FETH.Extension;
+				PRODUCT_NAME = "Sa2FETH Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA35F9582E4CED66004D813A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "app/macos/Sa2FETH.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9BH74AQM8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sa2FETH;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.Sa2FETH;
+				PRODUCT_NAME = Sa2FETH;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA35F9592E4CED66004D813A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "app/macos/Sa2FETH.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9BH74AQM8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sa2FETH;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ethz.siplab.Sa2FETH;
+				PRODUCT_NAME = Sa2FETH;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA35F95C2E4CED66004D813A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA35F95D2E4CED66004D813A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA35F8E12E4CED65004D813A /* Build configuration list for PBXProject "Sa2FETH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35F95C2E4CED66004D813A /* Debug */,
+				AA35F95D2E4CED66004D813A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35F9482E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35F9492E4CED66004D813A /* Debug */,
+				AA35F94A2E4CED66004D813A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35F94D2E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35F94E2E4CED66004D813A /* Debug */,
+				AA35F94F2E4CED66004D813A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35F9522E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35F9532E4CED66004D813A /* Debug */,
+				AA35F9542E4CED66004D813A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA35F9572E4CED66004D813A /* Build configuration list for PBXNativeTarget "Sa2FETH (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA35F9582E4CED66004D813A /* Debug */,
+				AA35F9592E4CED66004D813A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA35F8DE2E4CED65004D813A /* Project object */;
+}

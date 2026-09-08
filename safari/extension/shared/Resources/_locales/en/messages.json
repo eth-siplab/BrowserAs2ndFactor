@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Sa2FETH",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "This is Sa2FETH. You should tell us what your extension does here.",
+        "description": "Description of what the extension does."
+    }
+}
